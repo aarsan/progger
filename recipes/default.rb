@@ -4,6 +4,6 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
-directory 'c:/ahmet/' do
+directory 'c:/ahmets/' do
 	action :create
 end

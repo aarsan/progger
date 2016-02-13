@@ -5,3 +5,5 @@ license 'all_rights'
 description 'Installs/Configures progger'
 long_description 'Installs/Configures progger'
 version '0.1.0'
+
+depends 'windows'

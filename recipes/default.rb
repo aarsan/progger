@@ -7,3 +7,11 @@
 directory 'c:/ahmets/' do
 	action :create
 end
+
+control_group '1 Verify All Folders Exist' do
+	control '1.1 Verify Ahmet directory exists' do
+		it '' do
+			expect(command("ls /").to match(/Ahmet/))
+		end
+	end
+end

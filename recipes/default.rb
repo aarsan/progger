@@ -11,7 +11,7 @@ end
 control_group '1 Verify All Folders Exist' do
 	control '1.1 Verify Ahmet directory exists' do
 		it 'test if folder  is there' do
-			expect(file('/ahmets').to be_mounted
+			expect(file('/ahmets')).to be_mounted
 		end
 	end
 end

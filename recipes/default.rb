@@ -10,8 +10,8 @@ end
 
 control_group '1 Verify All Folders Exist' do
 	control '1.1 Verify Ahmet directory exists' do
-		it '"test if folder  is there' do
-			expect(command(((Get-ChildItem "c:/") | select-string "ahmets"))).to match(/Ahmets/)
+		it 'test if folder  is there' do
+			expect(command(((Get-ChildItem c:) | select-string "ahmets"))).to match(/Ahmets/)
 		end
 	end
 end

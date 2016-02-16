@@ -25,5 +25,8 @@ control_group '1 Verify All Folders Exist' do
 		describe os['family'] do
 			it { should eq 'windows' }
 		end
+		describe host('bing.com', port: 80, proto: 'tcp') do
+			it { should be_resolvable }
+		end
 	end
 end

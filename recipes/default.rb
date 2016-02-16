@@ -22,5 +22,8 @@ control_group '1 Verify All Folders Exist' do
 		describe windows_feature('IIS-Webserver') do
 			it { should be_installed }
 		end
+		describe os['family'] do
+			it { should eq 'windows' }
+		end
 	end
 end

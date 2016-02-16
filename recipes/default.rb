@@ -16,8 +16,11 @@ control_group '1 Verify All Folders Exist' do
 		describe user('aarsan') do
 			it { should exist }
 		end
-		describe file('c:/ahmets') do
+		describe file('c:/ahmets/') do
 			it { should be_directory }
+		end
+		describe windows_feature('IIS-Webserver') do
+			it { should be_installed }
 		end
 	end
 end

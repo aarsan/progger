@@ -16,7 +16,7 @@ control_group '1 Verify All Folders Exist' do
 		describe user('aarsan') do
 			it { should exist }
 		end
-		describe file('/ahmets') do
+		describe file('c:/ahmets') do
 			it { should be_directory }
 		end
 	end
